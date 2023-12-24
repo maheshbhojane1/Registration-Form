@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+
+
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4070f4;
+}
+
+.container {
+    min-width: 600px;
+    background-color: #fff;
+    position: relative;
+    width: 80%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container header {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    position: relative;
+    text-underline-position: 10px;
+}
+
+
+
+.container header::before {
+    contain: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 23px;
+    border-radius: 8px;
+    background-color: #407040;
+}
+
+
+.container form {
+    position: relative;
+
+    min-height: 490px;
+    min-width: 200px;
+    margin-top: 16px;
+    background-color: #fff;
+}
+
+.container form .details {
+
+    margin-top: 30px;
+}
+.container form .details .ID {
+
+    margin-top: 10px;
+}
+
+.container form .title {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+
+}
+
+.container form .fields {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+form .fields .input-filed {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% /3 - 15px);
+    /* max-resolution: ; */
+    margin: 4px 0;
+    /* height: calc(20%); */
+    /* background-color: red; */
+}
+
+.input-filed label {
+    font-size: 15px;
+    font-weight: 500;
+    font-style: bold;
+    color: #2e2e2e;
+    margin-left: 10px;
+}
+
+.input-filed input {
+    height: 40px;
+    margin: 8px 0;
+    padding: 0 15px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+
+}
+
+.input-filed input :is(:focus, :valid) {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-filed input [type="date"] {
+
+    color: #707070;
+}
+
+.input-filed input [type="date"]:valid {
+
+    color: #333;
+}
+.container form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    width: 100%;
+    border-radius: 6px;
+    color: #fff;
+    margin: 24px 0;
+    height: 8vh;
+    max-width: 200px;
+    background-color: #4070f4;
+    transition: all 0.3s linear;
+    font-size: 15px;
+
+}
+form button:hover{
+cursor: pointer;
+background-color: #265df2;
+}
+form button{
+    margin: 0 6px;
+}
